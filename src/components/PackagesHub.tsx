@@ -182,12 +182,10 @@ export default function PackagesHub({
 
   // Sidebar link details
   const navigationLinks = [
-    { label: "Daily Treats", id: "daily-treats" },
     { label: "Bakery Buckets", id: "ordering" },
     { label: "Catering Packages", id: "catering-packages" },
     { label: "Custom Packages", id: "custom-packages" },
-    { label: "Kids Party Packs", id: "kids-party-packs" },
-    { label: "Events Booking", id: "events-booking" }
+    { label: "Kids Party Packs", id: "kids-party-packs" }
   ];
 
   const handleScrollToId = (id: string) => {
@@ -349,8 +347,8 @@ export default function PackagesHub({
               {/* Image Segment */}
               <div className="md:w-5/12 min-h-[220px] relative overflow-hidden bg-stone-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" 
-                  alt="Bakery Buckets Traditional Delicacies with tea and scones"
+                  src="./images/bakery_buckets_counter.jpg" 
+                  alt="Nems branded bakery buckets of scones, muffins, and colorful melting moments on the side of a kitchen counter with baking utensils"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />
@@ -367,7 +365,7 @@ export default function PackagesHub({
                     Bakery Buckets &amp; Provisions
                   </h3>
                   <p className="text-xs text-stone-600 leading-relaxed">
-                    Order our signature buttermilk scone crowns, deluxe chocolate chip muffins, traditional koeksisters, or butter biscuits packed in food-safe airtight bucket containers (2L to 20L). Perfect for morning tea, graduation support, weddings, and lobolas.
+                    Order our signature golden buttermilk scones, fluffy muffins, and colorful melting moment biscuits packed fresh in food-safe airtight bucket containers (2L to 20L). Perfect for morning tea, graduation support, weddings, and lobolas.
                   </p>
                   <div className="pt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[10px] text-stone-500 font-bold uppercase tracking-wider font-sans">
                     <span>🪣 Airtight Travel Protection</span>
@@ -395,7 +393,7 @@ export default function PackagesHub({
               {/* Image Segment */}
               <div className="md:w-5/12 min-h-[220px] relative overflow-hidden bg-stone-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800" 
+                  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" 
                   alt="Gourmet Catering Platters"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
@@ -441,8 +439,8 @@ export default function PackagesHub({
               {/* Image Segment */}
               <div className="md:w-5/12 min-h-[220px] relative overflow-hidden bg-stone-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" 
-                  alt="Bespoke Bakery Gift Box"
+                  src="./images/gift_packages.jpg" 
+                  alt="Luxury Travel Box and Gift Hamper Bag with mini scones, macarons, juice, fresh fruit, and dessert pudding"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />
@@ -456,15 +454,15 @@ export default function PackagesHub({
               <div className="md:w-7/12 p-6 sm:p-8 flex flex-col justify-between space-y-6">
                 <div className="space-y-3">
                   <h3 className="serif text-2xl sm:text-3xl font-bold text-stone-950 leading-tight">
-                    Bespoke Custom Packages
+                    Gourmet Baking Gift Hampers
                   </h3>
                   <p className="text-xs text-stone-600 leading-relaxed">
-                    Choose from our legendary high-crown scones, multi-seed crunch rusks, and pastel macarons. Customize double-walled corrugated Travel Boxes to protect your treats over long distance transport.
+                    Custom luxury travel boxes and presentation gift bags stuffed with golden mini scones, colourful macarons, refreshing juice, fresh berries, and sweet dessert pudding cups. Protected in double-walled corrugated boxes for long distance transport.
                   </p>
                   <div className="pt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[10px] text-stone-500 font-bold uppercase tracking-wider font-sans">
                     <span>📦 Travel-Guaranteed</span>
                     <span>•</span>
-                    <span>🍪 Gift Ribbons &amp; Cards</span>
+                    <span>🧃 Mini Scones, Macarons &amp; Juice</span>
                   </div>
                 </div>
 
@@ -487,8 +485,8 @@ export default function PackagesHub({
               {/* Image Segment */}
               <div className="md:w-5/12 min-h-[220px] relative overflow-hidden bg-stone-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" 
-                  alt="Spiderman party packs and princess cupcake box"
+                  src="./images/kids_party_packs.jpg" 
+                  alt="Spider-Man superhero and princess themed kids party gift packs"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />
@@ -520,52 +518,6 @@ export default function PackagesHub({
                     className="bg-stone-950 hover:bg-[#D4AF37] text-white hover:text-stone-950 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all shadow-md group-hover:scale-[1.01] active:scale-95 cursor-pointer inline-flex items-center space-x-2"
                   >
                     <span>Plan Kids Party Pack →</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Banner 5: Events Setup & Booking (ID: events-booking) */}
-            <div 
-              id="events-booking" 
-              className="scroll-mt-28 group relative overflow-hidden rounded-3xl border border-stone-200/80 bg-white shadow-md hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row items-stretch"
-            >
-              {/* Image Segment */}
-              <div className="md:w-5/12 min-h-[220px] relative overflow-hidden bg-stone-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
-                  alt="Decorated Venue Reception Place"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-stone-900/10 pointer-events-none" />
-                <span className="absolute top-4 left-4 bg-purple-700 text-white px-3 py-1 text-[9px] font-black uppercase tracking-widest rounded-lg">
-                  Catering &amp; Decor Layouts
-                </span>
-              </div>
-              
-              {/* Text Segment */}
-              <div className="md:w-7/12 p-6 sm:p-8 flex flex-col justify-between space-y-6">
-                <div className="space-y-3">
-                  <h3 className="serif text-2xl sm:text-3xl font-bold text-stone-950 leading-tight">
-                    Event Setup &amp; Booking Gallery
-                  </h3>
-                  <p className="text-xs text-stone-600 leading-relaxed">
-                    View setup designs of our beautifully styled corporate high teas, weddings, and traditional family event gatherings across Gauteng. Coordinated with royal service sets, matching linens, and certified safety.
-                  </p>
-                  <div className="pt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[10px] text-stone-500 font-bold uppercase tracking-wider font-sans">
-                    <span>👑 Premium Styling Sets</span>
-                    <span>•</span>
-                    <span>📋 Full Coordinator Management</span>
-                  </div>
-                </div>
-
-                <div>
-                  <button
-                    onClick={() => setActiveModal("events")}
-                    className="bg-stone-950 hover:bg-[#D4AF37] text-white hover:text-stone-950 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all shadow-md group-hover:scale-[1.01] active:scale-95 cursor-pointer inline-flex items-center space-x-2"
-                  >
-                    <span>View Setup Gallery →</span>
                   </button>
                 </div>
               </div>
